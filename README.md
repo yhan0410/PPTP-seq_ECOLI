@@ -4,3 +4,9 @@ This repository includes data process scripts, processed data, external data, an
 
 ## Scripts
 All the scripts were run on a HPC cluster. SLURM workload manager was used. It returns read counts of each sgRNA-promoter pair in each bin.
+```
+$ 1_bowtie2-build.sh
+$ sbatch 2_bowtie2.sbatch
+$ sbatch 3_create_bed_files.sbatch
+$ 4_find_closest_operon.sh
+```
