@@ -10,3 +10,5 @@ $ sbatch 2_bowtie2.sbatch
 $ sbatch 3_create_bed_files.sbatch
 $ 4_find_closest_operon.sh
 ```
+## Jupyter Notebooks
+Data processing and vistualization
