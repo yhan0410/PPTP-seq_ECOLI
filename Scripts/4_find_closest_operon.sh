@@ -9,6 +9,6 @@ bedtools closest -D a -S -id -t first -a rev_promoter_read.bed  -b ../../Externa
 # according to Zaslaver et al., 2006, the promoter region include intergenic region plus about 50-150 bp into each flanking coding region
 # I found that it is not stricted to 50-150 bp, so I extend this range by extra 50 bp
 # the end of a promoter which was sequenced here should be in the first 0-200 bp in the coding region.
-awk '{if(($3 >= $10) && ($3 <= $10 + 200)) print $0}' closest_operon_map_for.bed >filtered_closest_operon_map_for.txt
-awk '{if(($2 <= $11) && ($2 >= $11 - 200)) print $0}' closest_operon_map_rev.bed >filtered_closest_operon_map_rev.txt
-cat filtered_closest_operon_map_for.txt filtered_closest_operon_map_rev.txt >filtered_closest_operon_map_all.txt
+awk '{if(($3 >= $10) && ($3 <= $10 + 200)) print $0}' closest_operon_map_for.bed >filtered_closest_operon_map_for.bed
+awk '{if(($2 <= $11) && ($2 >= $11 - 200)) print $0}' closest_operon_map_rev.bed >filtered_closest_operon_map_rev.bed
+cat filtered_closest_operon_map_for.txt filtered_closest_operon_map_rev.bed >filtered_closest_operon_map_all.bed
