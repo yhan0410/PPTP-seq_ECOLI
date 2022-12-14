@@ -15,4 +15,4 @@ After obtaining the read counts for all triplicates, the script #5 converted rea
 $ python 5_data_process.py
 ```
 ## Jupyter Notebooks
-Exploratory data analysis, differential expression analysis, and vistualization
+Exploratory data analysis, differential expression analysis, TF binding site analysis, and validation using a tunable TF library.
