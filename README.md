@@ -21,4 +21,4 @@ After obtaining the read counts for all triplicates, the script #5 converted rea
 $ python 5_data_process.py
 ```
 ## Jupyter Notebooks
-Exploratory data analysis, differential expression analysis, TF binding site analysis, and validation using a tunable TF library.
+Four files are used for exploratory data analysis, differential expression analysis, TF binding site analysis, and validation using a tunable TF library. Figures were reproduced in these notebooks.
