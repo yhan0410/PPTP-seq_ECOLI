@@ -16,7 +16,7 @@ def calculate_read_counts(mapping_file_path, read_count_file):
     
 # first three are M9 glucose replicates, the next two are LB replicates, the final three are M9 glycerol replicates
 # Glycerol_rep2_2 is a NGS technical replicates of Glycerol_rep2
-folder_names = ['Glucose_rep_1', 'Glucose_rep_2', 'Glucose_rep_3', 'LB_rep1', 'LB_rep2', 'Glycerol_rep1', 'Glycerol_rep2', 'Glycerol_rep2_2']
+folder_names = ['Glucose_rep1', 'Glucose_rep2', 'Glucose_rep3', 'LB_rep1', 'LB_rep2', 'Glycerol_rep1', 'Glycerol_rep2', 'Glycerol_rep2_2']
 for folder_name in folder_names:
     mapping_file_path = '../SAM_files/' + folder_name + '/filtered_closest_operon_map_all.bed'
     read_count_file = '../Processed_data/read_count_'+ folder_name + '.csv'
