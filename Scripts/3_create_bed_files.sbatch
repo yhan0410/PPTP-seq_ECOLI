@@ -7,7 +7,7 @@ module load samtools
 module load bedtools
 
 ID=${SLURM_ARRAY_TASK_ID}
-SAM_FILE_PATH="../SAM_files/Glucose_rep_1"
+SAM_FILE_PATH="../SAM_files/Glucose_rep1"
 
 # extract read id and mapped sgRNA columns
 awk '{if($2 == 0)print $1,$3}' $SAM_FILE_PATH/dual_lib_bin${ID}_r1.sam >$SAM_FILE_PATH/dual_lib_bin${ID}_r1.tab
