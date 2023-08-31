@@ -1,4 +1,4 @@
-cd ~/work_dir/MPRA_TRN/SAM_files/Glucose_rep_1
+cd ~/work_dir/MPRA_TRN/SAM_files/Glucose_rep1
 # merge all read information from different bins
 # promoter read is on P7 end, so if the read is mapped to '-' strand, it corresponds to the promoter on the '+' strand
 cat *_result.bed | sort -k2,2n -k4 -k7 -k8,2n | awk '{if($6=="-") print >"for_promoter_read.bed"; else print >"rev_promoter_read.bed"}'
