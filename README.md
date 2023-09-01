@@ -18,7 +18,8 @@ $ 4_find_closest_operon.sh
 ```
 After obtaining the read counts for all triplicates, the script #5 converted read counts to cell counts and fitted cell counts using log-normal distribution. 
 ```
-$ python 5_data_process.py
+$ python 5_calculate_read_counts.py
+$ python 6_data_process.py
 ```
 ## Jupyter Notebooks
 Four files are used for exploratory data analysis, differential expression analysis, TF binding site analysis, and validation using a tunable TF library. Figures were reproduced in these notebooks.
